@@ -4,7 +4,6 @@ var redis = require("redis")
 
 
 redis.debug_mode = false;
-pub.set("count", 0)
 setInterval(function() {
   
   pub.incr("count", function(err, value) {
@@ -12,7 +11,6 @@ setInterval(function() {
   })
 }, 100)
 
-pub2.set('count2', 0)
 
 setInterval(function() {
   pub2.incr("count2", function(err, value) {
