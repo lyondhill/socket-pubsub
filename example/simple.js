@@ -14,6 +14,6 @@ socket.emit('subscribe', 'a nice channel');
 socket.emit('subscribe', 'another one');	
 
 socket.emit('publish', 'a nice channel', 'hay dude')
-// setInterval(function() {
-// 	socket.emit('publish', 'a nice channel', 'hay dude')
-// }, 1000)
+setInterval(function() {
+	socket.emit('publish', 'a nice channel', 'hay dude')
+}, 1000)
